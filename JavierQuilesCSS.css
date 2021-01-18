@@ -1,0 +1,36 @@
+
+
+.menu { 
+font-family: sans-serif; 
+font-size: 18px; 
+font-weight: 400; 
+color: #ffffff; 
+background:#ee0467 }
+
+body {
+	background-image: url("mesa-maderajpg.jpg");
+  background-color: #00FFFF;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+	}
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+p {
+	color: white;
+	}
+	
+.galeria img {
+    left: 1;
+    opacity: 0;
+    transition: opacity 3s;
+	}
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4){opacity: 1;}
